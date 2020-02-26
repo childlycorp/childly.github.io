@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Childly - Thinking the great end</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+  </head>
+
+  <body id="body" class="en" background="assets/images/bg.svg">
+    <div id="back-modal" onclick="onClickBackModal()" class="back-modal"></div>
+    <div class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    <header class="header-area">
+      <div class="navbar-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                  <img
+                    class="logo"
+                    src="assets/images/childly_logo.svg"
+                    alt="Logo"
+                  />
+                </a>
+                <button
+                  id="navbar-toggler"
+                  class="navbar-toggler"
+                  onclick="subMenuToggle()"
+                  type="button"
+                >
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                </button>
+
+                <div id="sub-menu-bar" class="navbar-collapse sub-menu-bar">
+                  <ul id="nav" class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="page-scroll" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#press">Press</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#history">History</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#careers">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+ 
+    <!-- <div id="fullpage" class="wrapper"> -->
+    <div class="wrapper">
+      <section id="home" class="home banner">
+        <div class="container center">
+          <div class="text-center">
+            <h2 class="header-title">
+              Thinking the great end
+            </h2>
+            <p class="header-sub-title">
+              We named the company, we built the services, thinking from the
+              end.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="service section service-content">
+        <div class="heading">
+          <h3 class="heading-text">
+            Service
+          </h3>
+          <span class="heading-line"></span>
+        </div>
+        <div class="section-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 service-img">
+                <div class="text-center order-lg-last">
+                  <a href="https://dovewallet.com/en">
+                  <img
+                    class="service-img-dovewallet"
+                    src="assets/images/dovewallet_logo.svg"
+                    alt="dovewallet_logo"
+                  />
+                </a>
+                </div>
+              </div>
+              <div class="col-lg-8 service-text">
+                <div>
+                  <div class="section-title">
+                    <div>
+                      <h3 class="title">
+                        <span>
+                          It started with Dove Wallet's definition of real
+                          banking services. As the wake of crypto-economy has
+                          brought heightened everyday customer expectations,
+                          banking services’ capability to increase everyday
+                          customer's assets is now more important than ever
+                          been.
+                        </span>
+                      </h3>
+                      <p class="text"></p>
+                    </div>
+                    <div>
+                      <a
+                        class="more"
+                        onclick="dovewalletMoreTextToggle()"
+                        ><img src="assets/images/more.svg" alt="more"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="more-text" id="service-dovewallet-more-text">
+                  <div class="more-info-frame">
+                    <p>
+                      As the cryptocurrency adoption for the New Economy keeps
+                      growing, in Dove Wallet, we understand how much our
+                      customers need a friendly platform to learn and
+                      participate in the market in a simple, secure & profitable
+                      way. Dove Wallet is made for beginners & experienced
+                      investors alike, offers customers their digital wallet,
+                      being able to secure, trade & manage your
+                      cryptocurrencies, digital assets all in one place.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row section-miningpullhub">
+              <div class="col-lg-8 service-text">
+                <div>
+                  <div class="section-title">
+                    <h3 class="title">
+                      <span>
+                        Mining Pool Hub is a crypto mining network service,
+                        supports to combine miner’s computational resources over
+                        a network and split the reward according to its
+                        contribution equally.
+                      </span>
+                    </h3>
+                    <div>
+                    <a
+                      class="more"
+                      onclick="minigpoolhubMoreTextToggle()"
+                      ><img src="assets/images/more.svg" alt="more"
+                    /></a>
+                  </div>
+                    <div class="more-text" id="service-minigpoolhub-more-text">
+                      <div class="more-info-frame">
+                        <p>
+                          Since its global launch in 2014, Mining Pool Hub has
+                          proven itself as one of the most reliable & secure
+                          mining pool service with more than 500K users
+                          worldwide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row mt-30 section-sub-miningpullhub">
+                      <div class="text-center">
+                        <div class="minigpoolhub-count">
+                          <h4 class="font-bold">5.1M+</h4>
+                        </div>
+                        <div>
+                          <p>Cumulative member</p>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <div>
+                          <h4 class="font-bold">498.6B</h4>
+                        </div>
+                        <div>
+                          <p>Cumulative member</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 service-img">
+                <div>
+                  <a href="https://miningpoolhub.com/">
+                  <img
+                    class="service-img-miningpullhub"
+                    src="assets/images/miningpoolhub_logo.jpg"
+                    alt="minigpoolhub_logo"
+                  />
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="press" class="press press-content section">
+        <div class="section-wrapper">
+          <div class="heading">
+            <h3 class="heading-text">
+              Press
+            </h3>
+            <span class="heading-line"></span>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="brand-logo d-flex align-items-center justify-content-center justify-content-md-between"
+                >
+                  <div class="single-logo mt-30">
+                    <a href="https://finance.yahoo.com/news/dove-wallet-users-now-buy-150010448.html">
+                    <img src="assets/images/press-yahoo.svg" alt="press" />
+                    </a>
+                  </div>
+                  <div class="single-logo mt-30">
+                    <a href="https://markets.businessinsider.com/news/stocks/dove-wallet-seeks-to-expand-its-global-presence-in-2020-1028863532">
+                    <img src="assets/images/press-markets.svg" alt="press" />
+                    </a>
+                  </div>
+                  <div class="single-logo mt-30">
+                    <a href="https://kr.cointelegraph.com/news/dove-wallet-adopts-anti-money-laundering-solutions">
+                    <img src="assets/images/press-cointelegraph.svg" alt="press" />
+                  </a>
+                  </div>
+                  <div class="single-logo mt-30">
+                    <a href="http://www.zdnet.co.kr/view/?no=20200115135004">
+                    <img src="assets/images/press-zdnet.svg" alt="press" />
+                  </a>
+                  </div>
+                  <div class="single-logo mt-30">
+                    <a href="https://www.etnews.com/20191218000286">
+                    <img src="assets/images/press-elecpaper.svg" alt="press" />
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="history" class="history history-section history section">
+        <div class="section-wrapper">
+          <div class="heading">
+            <h3 class="heading-text">
+              History
+            </h3>
+            <span class="heading-line"></span>
+          </div>
+          <div class="container">
+            <ul class="list">
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="v-line"></div>
+
+              <li class="item">
+                <div class="date">2019.12</div>
+                <div class="event">Childly US, UK & Canada Branch</div>
+              </li>
+
+              <li class="sub-item">
+                <div class="sub-date">2019.11</div>
+                <div class="sub-event">
+                  Dove Wallet Passes 70,000 Unique Customers
+                </div>
+              </li>
+
+              <li class="item">
+                <div class="date">2019.04</div>
+                <div class="event">Dove Wallet Launch</div>
+              </li>
+
+              <li class="sub-item">
+                <div class="sub-date">2018.01</div>
+                <div class="sub-event">
+                  Mining Pool Hub Passes 400,000 Unique Customers
+                </div>
+              </li>
+              <li class="sub-item">
+                <div class="sub-date">2015.05</div>
+                <div class="sub-event">
+                  Mining Pool Hub Auto Switch & Auto Exchange
+                </div>
+              </li>
+
+              <li class="item">
+                <div class="date">2014.02</div>
+                <div class="event">Mining Pool Hub Launch</div>
+              </li>
+              <li class="sub-item">
+                <div class="sub-date">2014.01</div>
+                <div class="sub-event">
+                  Samsung Global Smart App Challenge 2013 Award
+                </div>
+              </li>
+
+              <li class="sub-item">
+                <div class="sub-date">2013.05</div>
+                <div class="sub-event">
+                  Korea TIPA ‘Self-employed Business
+                  <br />
+                  Creative Enterprises Growth &
+                  <br />
+                  Technological Development Project’ Selected
+                </div>
+              </li>
+
+              <li class="item">
+                <div class="date">2013.02</div>
+                <div class="event">Childly Founded</div>
+              </li>
+
+              <li class="sub-item">
+                <div class="sub-date">2012.12</div>
+                <div class="sub-event">
+                  Samsung Global Smart App Challenge 2012 Award
+                </div>
+              </li>
+
+              <li class="item">
+                <div class="date">2012.08</div>
+                <div class="event">
+                  Seoul ‘Young Entrepreneurs 1000 project’ Selected
+                </div>
+              </li>
+              <div class="row img-frame">
+                <div class="img1">
+                  <img src="assets/images/history-1.jpg" alt="history" />
+                </div>
+                <div class="img2">
+                  <img src="assets/images/history-2.jpg" alt="history" />
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery gallery-content section">
+        <div class="section-wrapper">
+          <div class="container">
+            <div class="grid">
+              <div class="item1">
+                <img
+                  class="gallery-img"
+                  src="assets/images/temp1.jpg"
+                  alt="temp"
+                />
+              </div>
+              <div class="item2">
+                <img
+                  class="gallery-img"
+                  src="assets/images/temp2.jpg"
+                  alt="temp"
+                />
+              </div>
+              <div class="item3">
+                <img
+                  class="gallery-img"
+                  src="assets/images/temp3.jpg"
+                  alt="temp"
+                />
+              </div>
+              <div class="item4">
+                <img
+                  class="gallery-img"
+                  src="assets/images/temp4.jpg"
+                  alt="temp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="careers" class="careers careers-content section">
+        <div class="section-wrapper">
+          <div class="heading">
+            <h3 class="heading-text">
+              Careers
+            </h3>
+            <span class="heading-line"></span>
+          </div>
+          <div class="container">
+            <div class="row flex-center">
+              <div class="keyword">
+                <h4>“Growth”</h4>
+              </div>
+              <div class="keyword">
+                <h4>“Humility”</h4>
+              </div>
+            </div>
+            <div class="pt-60 pb-30 text-center">
+              <h3 class="text highlight">
+                “Be more modest and keep your learning like a child.”
+              </h3>
+              <span
+                >What makes Childly truly unique is our founding philosophy and
+                it represents a sense of our core values on people very
+                clearly.</span
+              >
+             <div>
+                <a
+                  class="more"
+                  onclick="careersMoreTextToggle()"
+                ><img src="assets/images/more.svg" alt="more"
+                /></a>
+              </div> 
+              <div id="careers-more-text" class="more-text">
+                <div class="more-info-frame">
+                <p>
+                  If you’re a person with self-growth aspiration and curiosity, who finds learning is utterly fun and embrace new challenges with strong sense of responsibility & confidence, please check out here for new opportunities at Childly.
+                </p>
+              </div>
+              </div>
+            </div>
+            <div class="apply-frame">
+              <a href="http://www.saramin.co.kr/zf_user/company-info/view?csn=7298601268" class="apply-btn">Apply</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact contact-content section">
+        <div class="section-wrapper">
+          <div class="heading">
+            <h3 class="heading-text">
+              Contact
+            </h3>
+            <span class="heading-line"></span>
+          </div>
+          <div class="container">
+            <div class="map-frame">
+              <img
+                src="assets/images/globalmap_general_childly.svg"
+                alt="map"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer fp-auto-height">
+        <div class="container">
+          <div class="footer-widget pb-70">
+            <div class="row">
+              <div class="footer-about" >
+              <div class="logo-frame">
+                <a class="logo" href="#">
+                  <img src="assets/images/childly_logo.svg" alt="logo" />
+                </a>
+              </div>       
+              <div>
+                <span class="lang">Language</span>
+                <select class="lang-name" onchange="if(this.value) location.href=(this.value);">English
+                  <option selected="selected" value="en.html">English</option>
+                  <option value="ko.html">Korea</option>
+                </select>
+              </div>       
+              <div class="mt-30">
+                <p class="information"> support@childly.com </p>
+                <p class="information">
+                  Childly Corporation | Republic of Korea (729-86-01268) | 36th
+                  Floor, Gukjegeumyung-ro 2-gil 37, Yeongdeungpo-gu, Seoul,
+                  Republic of Korea, 07327
+                </p>
+                <p class="information">
+                  Childly UK Ltd | England and Wales (12358864) | Level 18, 40
+                  Bank Street, London, UK, E14 5NR
+                </p>
+                <p class="information">
+                  Childly Canada Inc | Canada (1178364-5) | 5th Floor, 100
+                  University Avenue, Toronto ON, Canada, M5J 1V6
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
