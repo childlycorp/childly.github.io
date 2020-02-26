@@ -7,12 +7,14 @@ $(function() {
     var scroll = $(window).scrollTop();
     if (scroll < 20) {
       $(".navbar-area").removeClass("sticky");
+      $(".navbar-area").removeClass("bg-white");      
       $(".navbar .navbar-brand img").attr(
         "src",
         "assets/images/childly_logo.svg"
       );
     } else {
       $(".navbar-area").addClass("sticky");
+      $(".navbar-area").addClass("bg-white");      
       $(".navbar .navbar-brand img").attr(
         "src",
         "assets/images/childly_logo.svg"

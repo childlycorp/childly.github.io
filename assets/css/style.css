@@ -116,6 +116,10 @@ p {
   height: 100%;
 }
 
+.bg-white {
+  background-color: white;
+}
+
 
 .section-title .line {
   background: -webkit-linear-gradient(#708fff 0%, #8d70ff);
@@ -250,7 +254,6 @@ p {
 }
 
 .sticky .sub-menu-bar {
-  background-color: #fff;
 }
 
 .sub-menu-bar.show {
