@@ -434,7 +434,7 @@ html {
 }
 
 .history .v-line {
-  height: 77%;
+  height: 75%;
   top: 5px;
   position: absolute;
   width: 3px;
@@ -445,8 +445,23 @@ html {
 }
 
 .history .dot {
-  width: 10px;
-  height: 10px;
+  background: #8eca19;
+  width: 5px;
+  height: 5px;
+  border-radius: 12px;
+  transform: translate3d(0, -2px, 0);
+  left: 93px;
+  position: absolute;
+}
+
+.history .dot.one {
+  top: 10px;
+}
+.history .dot.two {
+  top: 0px;
+}
+.history .dot.three {
+  top: -10px;
 }
 
 .history .list {
@@ -570,6 +585,20 @@ html {
   .history .v-line {
     height: 75%;
     left: 50px;
+  }
+
+  .history .dot {
+    left: 49px;
+  }
+
+  .history .dot.one {
+    top: 6px;
+  }
+  .history .dot.two {
+    top: -2px;
+  }
+  .history .dot.three {
+    top: -10px;
   }
 
   .history .date {
