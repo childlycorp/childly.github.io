@@ -179,7 +179,7 @@ html {
 .more-info-frame {
   width: 90%;
   margin: 0 auto;
-  padding: 12px;
+  padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 5px 5px 0 rgba(154, 160, 186, 0.1),
@@ -187,8 +187,6 @@ html {
 }
 
 .more {
-  cursor: pointer;
-  width: 14px;
   margin: 15px auto 0px;
   display: flex;
 }
@@ -198,6 +196,17 @@ html {
   max-height: 0px;
   transition: 1s linear;
   overflow: hidden;
+}
+
+.more-text p {
+  text-align: left;
+}
+
+.more-img {
+  cursor: pointer;
+  max-width: unset;
+  width: 45px;
+  margin: 0 auto;
 }
 
 .more-text.show {
@@ -320,7 +329,7 @@ html {
 }
 
 .service-content .service-img-dovewallet {
-  width: 90%;
+  /* width: 90%; */
 }
 
 @media (max-width: 767px) {
@@ -347,9 +356,17 @@ html {
   justify-content: space-evenly;
 }
 
+.service-content .section-sub-miningpullhub .sub-text {
+  font-size: 14px;
+}
+
 @media (max-width: 575px) {
   .service-content .section-sub-miningpullhub {
     margin-top: 15px;
+  }
+
+  .service-content .section-sub-miningpullhub .sub-text {
+    font-size: 12px;
   }
 }
 
@@ -367,7 +384,12 @@ html {
 }
 
 @media (max-width: 991px) {
+  .service-content .service-text {
+    margin-top: 30px;
+  }
+  
   .service-content .section-miningpullhub {
+    margin-top: 80px;
     flex-direction: column-reverse;
   }
 
@@ -377,6 +399,19 @@ html {
 
   .service-content .service-img-miningpullhub {
     height: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-content .section-dovewallet .img-frame {
+    position: absolute;
+    left: 0;
+  }
+
+  .service-content .section-miningpullhub .img-frame {
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
   }
 }
 
@@ -404,6 +439,7 @@ html {
   position: relative;
   background-color: #cbcdd3;
   margin: 0px auto;
+  margin-top: 8px;
   margin-bottom: 50px;
 }
 
