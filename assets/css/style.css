@@ -253,6 +253,12 @@ p {
   display: none;
 }
 
+@media (max-width: 991px) {
+  .sub-menu-bar {
+    background-color: white;
+  }
+}
+
 .sticky .sub-menu-bar {
 }
 

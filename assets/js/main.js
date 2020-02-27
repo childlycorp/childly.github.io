@@ -7,14 +7,16 @@ $(function() {
     var scroll = $(window).scrollTop();
     if (scroll < 20) {
       $(".navbar-area").removeClass("sticky");
-      $(".sub-menu-bar").removeClass("bg-white");      
+      $(".navbar-toggler").addClass("pointer-none");
+      $(".sub-menu-bar").addClass("display-none");
       $(".navbar .navbar-brand img").attr(
         "src",
         "assets/images/childly_logo.svg"
       );
     } else {
       $(".navbar-area").addClass("sticky");
-      $(".sub-menu-bar").addClass("bg-white");      
+      $(".navbar-toggler").removeClass("pointer-none");
+      $(".sub-menu-bar").removeClass("display-none");
       $(".navbar .navbar-brand img").attr(
         "src",
         "assets/images/childly_logo.svg"
