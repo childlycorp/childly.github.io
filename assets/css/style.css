@@ -510,21 +510,6 @@ p {
   background-position: bottom center;
 }
 
-.header-hero-content .header-sub-title {
-  font-size: 22px;
-  font-weight: 300;
-  margin-top: 12px;
-}
-@media (max-width: 767px) {
-  .header-hero-content .header-sub-title {
-    font-size: 24px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .header-hero-content .header-sub-title {
-    font-size: 24px;
-  }
-}
 .header-hero-content .header-title {
   font-size: 52px;
   font-weight: 700;
