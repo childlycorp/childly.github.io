@@ -512,7 +512,7 @@ html {
 }
 
 .history .v-line {
-  height: 77%;
+  height: 75%;
   top: 5px;
   position: absolute;
   width: 1px;
@@ -678,7 +678,7 @@ html {
   }
 
   .history .v-line {
-    height: 75%;
+    height: 72%;
     left: 52px;
   }
 
