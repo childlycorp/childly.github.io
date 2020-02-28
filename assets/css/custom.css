@@ -635,6 +635,7 @@ html {
 
 .history .img2 {
   margin: 0 8px;
+  margin-right: 70px;
 }
 
 .history .img2 img {
@@ -654,6 +655,10 @@ html {
   }
   .history .sub-date {
     padding-left: 0px;
+  }
+
+  .history .img2 {
+    margin-right: 45px;
   }
 }
 
@@ -701,6 +706,10 @@ html {
     width: 56px;
     padding-left: 0px;
     margin-right: 4px;
+  }
+
+  .history .img2 {
+    margin-right: 10px;
   }
 }
 
