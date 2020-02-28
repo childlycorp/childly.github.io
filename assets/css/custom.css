@@ -487,23 +487,23 @@ html {
 }
 
 .history .v-line {
-  height: 75%;
+  height: 77%;
   top: 5px;
   position: absolute;
-  width: 3px;
-  background-color: #159300;
-  left: 94px;
+  width: 1px;
+  background-color: #8eca19;
+  left: 96px;
   border-radius: 3px;
   margin-top: 14px;
 }
 
 .history .dot {
   background: #8eca19;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border-radius: 12px;
   transform: translate3d(0, -2px, 0);
-  left: 93px;
+  left: 94.5px;
   position: absolute;
 }
 
@@ -537,12 +537,12 @@ html {
 .history .date::after {
   content: " ";
   background: #8eca19;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 12px;
   display: inline-block;
   transform: translate3d(0, -2px, 0);
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .history .sub-date {
@@ -557,13 +557,13 @@ html {
 
 .history .sub-date::after {
   content: " ";
-  background: #8eca19;
-  width: 10px;
-  height: 10px;
+  background: #b0ea40;
+  width: 7px;
+  height: 7px;
   border-radius: 12px;
   display: inline-block;
   transform: translate3d(0, -2px, 0);
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .history .item {
@@ -595,15 +595,28 @@ html {
   justify-content: center;
 }
 
+.history .img-frame img {
+  border-radius: 4px;
+}
+
 .history .img1 {
-  width: 100px;
   margin: 0 8px;
 }
 
+.history .img1 img {
+  width: 100px;
+  height: 75px;
+}
+
 .history .img2 {
-  width: 134px;
   margin: 0 8px;
 }
+
+.history .img2 img {
+  width: 100px;
+  height: 75px;
+}
+
 
 @media (max-width: 767px) {
   .history .item {
@@ -637,11 +650,11 @@ html {
 
   .history .v-line {
     height: 75%;
-    left: 50px;
+    left: 52px;
   }
 
   .history .dot {
-    left: 49px;
+    left: 51px;
   }
 
   .history .dot.one {
