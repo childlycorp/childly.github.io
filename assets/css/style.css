@@ -217,10 +217,11 @@ p {
   padding: 0;
 }
 .navbar-toggler .toggler-icon {
-  width: 30px;
+  background-color: #2e2e2e;
+  width: 22px;
   height: 2px;
   display: block;
-  margin: 5px 0;
+  margin: 3px 0;
   position: relative;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -234,7 +235,7 @@ p {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 7px;
+  top: 3px;
 }
 .navbar-toggler.active .toggler-icon:nth-of-type(2) {
   opacity: 0;
