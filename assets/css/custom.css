@@ -602,7 +602,7 @@ html {
 
 .history .sub-date::after {
   content: " ";
-  background: #b0ea40;
+  background: #8eca19;
   width: 7px;
   height: 7px;
   border-radius: 12px;
