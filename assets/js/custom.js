@@ -56,3 +56,26 @@ function careersMoreTextToggle() {
   var element = document.getElementById("careers-more-text");
   element.classList.toggle("show");
 }
+
+
+var galleryImg1 = document.getElementById("gallery-img1");
+var galleryImg2 = document.getElementById("gallery-img2");
+var galleryImg3 = document.getElementById("gallery-img3");
+var galleryImg4 = document.getElementById("gallery-img4");
+var imgModal = document.getElementById("image-modal");
+var imgContent = document.getElementById("image-modal-content");
+
+galleryImg1.onclick = showImageModal;
+galleryImg2.onclick = showImageModal;
+galleryImg3.onclick = showImageModal;
+galleryImg4.onclick = showImageModal;
+imgModal.onclick = closeImageModal;
+
+function showImageModal() {
+  imgModal.classList.add("show");
+  imgContent.src = this.src;
+}
+
+function closeImageModal() {
+  imgModal.classList.remove("show");
+}

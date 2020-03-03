@@ -279,7 +279,7 @@
                       href="https://kr.cointelegraph.com/news/dove-wallet-adopts-anti-money-laundering-solutions"
                       target="_blank"
                     >
-                    <img src="assets/images/press-cointelegraph.svg" alt="press" />
+                    <img class="cointelegraph" src="assets/images/press-cointelegraph.svg" alt="press" />
                   </a>
                   </div>   
                 </div>
@@ -391,6 +391,7 @@
             <div class="grid">
               <div class="grid-item item1">
                 <img
+                  id="gallery-img1"
                   class="gallery-img"
                   src="assets/images/gallery1.jpg"
                   alt="temp"
@@ -398,6 +399,7 @@
               </div>
               <div class="grid-item item2">
                 <img
+                  id="gallery-img2"
                   class="gallery-img"
                   src="assets/images/gallery2.jpg"
                   alt="temp"
@@ -405,6 +407,7 @@
               </div>
               <div class="grid-item item3">
                 <img
+                  id="gallery-img3"
                   class="gallery-img"
                   src="assets/images/gallery3.jpg"
                   alt="temp"
@@ -412,6 +415,7 @@
               </div>
               <div class="grid-item item4">
                 <img
+                  id="gallery-img4"
                   class="gallery-img"
                   src="assets/images/gallery4.jpg"
                   alt="temp"
@@ -487,10 +491,15 @@
           </div>
           <div class="container">
             <div class="map-frame">
+              <figure class="ball pos1"><span class="shadow"></span></figure>
+              <figure class="ball pos2"><span class="shadow"></span></figure>
+              <figure class="ball pos3"><span class="shadow"></span></figure>
+
               <img
                 src="assets/images/globalmap_general_childly.svg"
                 alt="map"
-              />
+                class="map"
+                />
             </div>
           </div>
         </div>
@@ -529,6 +538,9 @@
           </div>
         </div>
       </footer>
+      <div id="image-modal"class="modal-img">
+        <img id="image-modal-content"class="modal-img-content">
+      </div>
     </div>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/main.js"></script>

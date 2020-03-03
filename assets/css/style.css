@@ -594,6 +594,14 @@ p {
   opacity: 1;
 }
 
+.single-logo img.cointelegraph {
+  opacity: 0.7;
+}
+
+.single-logo:hover img.cointelegraph {
+  opacity: 1;
+}
+
 .footer-area {
   background-position: top center;
   position: relative;
