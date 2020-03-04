@@ -488,10 +488,11 @@ html {
   }
 }
 
-.ko .service-content .section-miningpullhub .title {
-  padding-left: 30px;
+@media (min-width: 992px){
+  .ko .service-content .section-miningpullhub .title {
+    padding-left: 30px;
+  }
 }
-
 .heading {
   position: relative;
   display: block;
