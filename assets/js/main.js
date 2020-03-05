@@ -7,16 +7,16 @@ $(function() {
     var scroll = $(window).scrollTop();
     if (scroll < 20) {
       $(".navbar-area").removeClass("sticky");
-      $(".navbar-toggler").addClass("pointer-none");
-      $(".sub-menu-bar").addClass("display-none");
+      // $(".navbar-toggler").addClass("pointer-none");
+      // $(".sub-menu-bar").addClass("display-none");
       $(".navbar .navbar-brand img").attr(
         "src",
         "assets/images/childly_logo.svg"
       );
     } else {
       $(".navbar-area").addClass("sticky");
-      $(".navbar-toggler").removeClass("pointer-none");
-      $(".sub-menu-bar").removeClass("display-none");
+      // $(".navbar-toggler").removeClass("pointer-none");
+      // $(".sub-menu-bar").removeClass("display-none");
       $(".navbar .navbar-brand img").attr(
         "src",
         "assets/images/childly_logo.svg"
@@ -32,7 +32,7 @@ $(function() {
     var scrollbarLocation = $(this).scrollTop();
     scrollLink.each(function() {
       var tag = this.hash.replace("#", "");
-      var sectionOffset = document.querySelector(`.${tag}`).offsetTop - 40;
+      var sectionOffset = document.querySelector(`.${tag}`).offsetTop - 80;
       if (sectionOffset < scrollbarLocation) {
         $(this)
           .parent()
