@@ -409,6 +409,13 @@ html {
   /* width: 90%; */
 }
 
+@media (min-width: 992px) {
+  .service-content .service-img-dovewallet {
+    /* width: 90%; */
+    margin-top: 32px;
+  }
+}
+
 @media (max-width: 767px) {
   .service-content .service-img {
     padding: 0px;
