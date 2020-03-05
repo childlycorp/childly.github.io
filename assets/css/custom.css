@@ -411,7 +411,6 @@ html {
 
 @media (min-width: 992px) {
   .service-content .service-img-dovewallet {
-    /* width: 90%; */
     margin-top: 32px;
   }
 }
@@ -819,14 +818,117 @@ html {
 }
 
 .gallery-content .item3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.gallery-content .item4 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.gallery-content .item5 {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.gallery-content .item6 {
+  grid-column: 6;
+  grid-row: 1;
+}
+
+.gallery-content .item7 {
   grid-column: 1;
   grid-row: 2;
 }
 
-.gallery-content .item4 {
+.gallery-content .item8 {
   grid-column: 2;
   grid-row: 2;
 }
+
+.gallery-content .item9 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.gallery-content .item10 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.gallery-content .item11 {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.gallery-content .item12 {
+  grid-column: 6;
+  grid-row: 2;
+}
+
+@media (max-width: 991px) {
+  .gallery-content .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .gallery-content .item2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .gallery-content .item3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .gallery-content .item4 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  
+  .gallery-content .item5 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .gallery-content .item6 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .gallery-content .item7 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .gallery-content .item8 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  
+  .gallery-content .item9 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .gallery-content .item10 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  .gallery-content .item11 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  
+  .gallery-content .item12 {
+    grid-column: 4;
+    grid-row: 3;
+  }
+}
+
 
 .gallery-content .gallery-img {
   cursor: pointer;
@@ -1081,10 +1183,3 @@ html {
 }
 
 /* nav offset */
-
-.service-content:target::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 20px;
-}
