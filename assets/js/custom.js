@@ -68,28 +68,66 @@ function careersMoreTextToggle() {
 /* Gallery start */
 var imgModal = document.getElementById("image-modal");
 var imgContent = document.getElementById("image-modal-content");
-var galleryPrev = document.getElementById("image-modal-prev");
-var galleryNext = document.getElementById("image-modal-next");
+var modalPrev = document.getElementById("image-modal-prev");
+var modalNext = document.getElementById("image-modal-next");
 var currentShowingImageId = undefined;
 var galleryImages = document.querySelectorAll(".gallery-img");
+var historyImages = document.querySelectorAll(".history-img");
 
-galleryImages.forEach(el => (el.onclick = showImageModal));
+historyImages.forEach(el => (el.onclick = showHistoryImageModal));
+galleryImages.forEach(el => (el.onclick = showGalleryImageModal));
 imgContent.onclick = closeImageModal;
-galleryPrev.onclick = onClickPrevBtn;
-galleryNext.onclick = onClickNextBtn;
 
 function showImageModal() {
   imgModal.classList.add("show");
+  imgContent.src = this.src;
+}
+
+function showHistoryImageModal() {
+  imgModal.classList.add("show");
   currentShowingImageId = parseInt(this.id.split("-")[2]);
   imgContent.src = this.src;
+
+  modalPrev.onclick = onClickHistoryPrevBtn;
+  modalNext.onclick = onClickHistoryNextBtn;
+}
+
+function showGalleryImageModal() {
+  imgModal.classList.add("show");
+  currentShowingImageId = parseInt(this.id.split("-")[2]);
+  imgContent.src = this.src;
+
+  modalPrev.onclick = onClickGalleryPrevBtn;
+  modalNext.onclick = onClickGalleryNextBtn;
 }
 
 function closeImageModal() {
   imgModal.classList.remove("show");
   currentShowingImageId = undefined;
+  modalPrev.onclick = undefined;
+  modalNext.onclick = undefined;
 }
 
-function onClickPrevBtn(e) {
+function onClickHistoryPrevBtn() {
+  if (currentShowingImageId <= 1) return;
+
+  var imgSrc = document.getElementById(
+    `history-img-${currentShowingImageId - 1}`
+  ).src;
+  currentShowingImageId -= 1;
+  imgContent.src = imgSrc;
+}
+
+function onClickHistoryNextBtn() {
+  if (currentShowingImageId >= 2) return;
+  var imgSrc = document.getElementById(
+    `history-img-${currentShowingImageId + 1}`
+  ).src;
+  currentShowingImageId += 1;
+  imgContent.src = imgSrc;
+}
+
+function onClickGalleryPrevBtn() {
   if (currentShowingImageId <= 1) return;
 
   var imgSrc = document.getElementById(
@@ -99,7 +137,7 @@ function onClickPrevBtn(e) {
   imgContent.src = imgSrc;
 }
 
-function onClickNextBtn() {
+function onClickGalleryNextBtn() {
   if (currentShowingImageId >= 12) return;
   var imgSrc = document.getElementById(
     `gallery-img-${currentShowingImageId + 1}`
