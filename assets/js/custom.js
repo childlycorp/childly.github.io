@@ -1,3 +1,4 @@
+/* progressbar start */
 window.addEventListener("scroll", progressBar);
 function progressBar() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -7,16 +8,22 @@ function progressBar() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("progress-bar").style.width = scrolled + "%";
 }
+/* progressbar end */
 
+/* subMenuToggle */
 function onClickBackModal() {
   var modalElement = document.getElementById("back-modal");
-  var subMenuElement = document.getElementById("sub-menu-bar");  
-  var minigpoohubTextElement = document.getElementById("service-minigpoolhub-more-text");
-  var dovewalletTextElement = document.getElementById("service-dovewallet-more-text");
+  var subMenuElement = document.getElementById("sub-menu-bar");
+  var minigpoohubTextElement = document.getElementById(
+    "service-minigpoolhub-more-text"
+  );
+  var dovewalletTextElement = document.getElementById(
+    "service-dovewallet-more-text"
+  );
   var careersTextElement = document.getElementById("careers-more-text");
   var navToggler = document.getElementById("navbar-toggler");
 
-  modalElement.classList.remove("on");  
+  modalElement.classList.remove("on");
   subMenuElement.classList.remove("show");
   // minigpoohubTextElement.classList.remove("show");
   // dovewalletTextElement.classList.remove("show");
@@ -56,26 +63,49 @@ function careersMoreTextToggle() {
   var element = document.getElementById("careers-more-text");
   element.classList.toggle("show");
 }
+/* subMenuToggle end  */
 
-
-var galleryImg1 = document.getElementById("gallery-img1");
-var galleryImg2 = document.getElementById("gallery-img2");
-var galleryImg3 = document.getElementById("gallery-img3");
-var galleryImg4 = document.getElementById("gallery-img4");
+/* Gallery start */
 var imgModal = document.getElementById("image-modal");
 var imgContent = document.getElementById("image-modal-content");
+var galleryPrev = document.getElementById("image-modal-prev");
+var galleryNext = document.getElementById("image-modal-next");
+var currentShowingImageId = undefined;
+var galleryImages = document.querySelectorAll(".gallery-img");
 
-galleryImg1.onclick = showImageModal;
-galleryImg2.onclick = showImageModal;
-galleryImg3.onclick = showImageModal;
-galleryImg4.onclick = showImageModal;
-imgModal.onclick = closeImageModal;
+galleryImages.forEach(el => (el.onclick = showImageModal));
+imgContent.onclick = closeImageModal;
+galleryPrev.onclick = onClickPrevBtn;
+galleryNext.onclick = onClickNextBtn;
 
 function showImageModal() {
   imgModal.classList.add("show");
+  currentShowingImageId = parseInt(this.id.split("-")[2]);
   imgContent.src = this.src;
 }
 
 function closeImageModal() {
   imgModal.classList.remove("show");
+  currentShowingImageId = undefined;
 }
+
+function onClickPrevBtn(e) {
+  if (currentShowingImageId <= 1) return;
+
+  var imgSrc = document.getElementById(
+    `gallery-img-${currentShowingImageId - 1}`
+  ).src;
+  currentShowingImageId -= 1;
+  imgContent.src = imgSrc;
+}
+
+function onClickNextBtn() {
+  if (currentShowingImageId >= 12) return;
+  var imgSrc = document.getElementById(
+    `gallery-img-${currentShowingImageId + 1}`
+  ).src;
+  currentShowingImageId += 1;
+  imgContent.src = imgSrc;
+}
+
+/* Gallery end */
