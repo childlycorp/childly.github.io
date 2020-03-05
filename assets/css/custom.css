@@ -1171,6 +1171,7 @@ html {
 
 .modal-img.show {
   display: block;
+  cursor: pointer;
 }
 
 .modal-img-content {
