@@ -47,8 +47,14 @@ $(function() {
 
   //===== close navbar-collapse when a  clicked
 
-  $(".navbar-nav a").on("click", function() {
+  $(".navbar-nav a").on("click", function(e) {
     $(".navbar-collapse").removeClass("show");
+    e.preventDefault();
+    var tag = this.hash.replace("#", "");
+    var topOffset = 65;
+    var elPos = document.querySelector(`.${tag}`).offsetTop;
+
+    window.scrollTo(0, elPos - topOffset);
   });
 
   $(".navbar-toggler").on("click", function() {
