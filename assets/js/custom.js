@@ -76,6 +76,7 @@ var historyImages = document.querySelectorAll(".history-img");
 
 historyImages.forEach(el => (el.onclick = showHistoryImageModal));
 galleryImages.forEach(el => (el.onclick = showGalleryImageModal));
+imgModal.onclick = closeImageModal;
 imgContent.onclick = closeImageModal;
 
 function showImageModal() {
@@ -108,7 +109,8 @@ function closeImageModal() {
   modalNext.onclick = undefined;
 }
 
-function onClickHistoryPrevBtn() {
+function onClickHistoryPrevBtn(e) {
+  e.stopPropagation();
   if (currentShowingImageId <= 1) return;
 
   var imgSrc = document.getElementById(
@@ -116,18 +118,22 @@ function onClickHistoryPrevBtn() {
   ).src;
   currentShowingImageId -= 1;
   imgContent.src = imgSrc;
+  
 }
 
-function onClickHistoryNextBtn() {
+function onClickHistoryNextBtn(e) {
+  e.stopPropagation();
   if (currentShowingImageId >= 2) return;
   var imgSrc = document.getElementById(
     `history-img-${currentShowingImageId + 1}`
   ).src;
   currentShowingImageId += 1;
   imgContent.src = imgSrc;
+  
 }
 
-function onClickGalleryPrevBtn() {
+function onClickGalleryPrevBtn(e) {
+  e.stopPropagation();
   if (currentShowingImageId <= 1) return;
 
   var imgSrc = document.getElementById(
@@ -135,15 +141,18 @@ function onClickGalleryPrevBtn() {
   ).src;
   currentShowingImageId -= 1;
   imgContent.src = imgSrc;
+  
 }
 
-function onClickGalleryNextBtn() {
+function onClickGalleryNextBtn(e) {
+  e.stopPropagation();
   if (currentShowingImageId >= 12) return;
   var imgSrc = document.getElementById(
     `gallery-img-${currentShowingImageId + 1}`
   ).src;
   currentShowingImageId += 1;
   imgContent.src = imgSrc;
+  
 }
 
 /* Gallery end */
