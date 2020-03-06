@@ -11,53 +11,53 @@ html {
   position: absolute;
   z-index: -1;
   border-radius: 50%;
-  filter: blur(40px);
+  filter: blur(54px);
   animation: 9s linear 0s infinite normal forwards running floatOne;
 }
 
 .balloon-1 {
-  top: 90px;
-  left: -105px;
-  width: 650px;
-  height: 650px;
-  background: rgba(89, 94, 255, 0.133);
+  top: 545px;
+  left: 18%;
+  width: 600px;
+  height: 600px;
+  background: rgba(253, 194, 191, 0.34);
 }
 
 .balloon-2 {
-  top: 710px;
-  left: -120px;
-  width: 500px;
-  height: 500px;
-  background: rgba(206, 94, 145, 0.133);
+  top: 625px;
+  left: 55%;
+  width: 300px;
+  height: 300px;
+  background: rgba(192, 253, 191, 0.133);
 }
 
 .balloon-3 {
-  top: -56px;
-  left: 1543px;
-  width: 500px;
-  height: 500px;
-  background: rgba(206, 94, 145, 0.133);
+  top: 1200px;
+  left: 56%;
+  width: 300px;
+  height: 300px;
+  background: rgba(252, 253, 191, 0.63);
 }
 
 .balloon-4 {
-  top: 535px;
-  left: 1580px;
-  width: 650px;
-  height: 650px;
-  background: rgba(255, 245, 159, 0.33);
+  top: 1474px;
+  left: 40%;
+  width: 250px;
+  height: 250px;
+  background: rgba(203, 191, 253, 0.26);
 }
 
 .balloon-5 {
-  top: 1480px;
-  left: -130px;
-  width: 350px;
-  height: 350px;
+  top: 3144px;
+  left: 57%;
+  width: 150px;
+  height: 150px;
   background: rgba(255, 245, 159, 0.33);
 }
 
 .balloon-6 {
-  top: 1700px;
-  left: 1000px;
+  top: 2942px;
+  left: 28%;
   width: 350px;
   height: 350px;
   background: rgba(142, 202, 25, 0.33);
@@ -73,11 +73,50 @@ html {
 
 .balloon-8 {
   top: 5100px;
-  left: -200px;
+  left: 18%;
   width: 600px;
   height: 600px;
-  background: rgba(89, 94, 255, 0.133);
+  background: rgba(253, 194, 191, 0.34);
 }
+
+.balloon-9 {
+  top: 5266px;
+  left: 53%;
+  width: 250px;
+  height: 250px;
+  background: rgba(191, 238, 253, 0.44);
+}
+
+@media (max-width: 991px) {
+  .balloon-1 {
+    left: -12%;
+  }
+  .balloon-2 {
+    left: 63%;
+  }
+  .balloon-3 {
+    left: 68%;
+  }
+  .balloon-4 {
+    left: 41%;
+  }
+  .balloon-5 {
+    left: 54%;
+  }
+  .balloon-6 {
+    left: 9%;
+  }
+  .balloon-7 {
+    left: -12%;
+  }
+  .balloon-8 {
+    left: 4%;
+  }
+  .balloon-9 {
+    left: 56%;
+  }
+}
+
 @keyframes floatOne {
   0% {
     transform: rotate(0deg) translateX(20px) rotate(0deg);
