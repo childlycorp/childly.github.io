@@ -130,7 +130,7 @@ html {
     width: 150px;
     height: 150px;
   }
-  
+
   .balloon-8 {
     top: 4500px;
     width: 400px;
@@ -453,12 +453,6 @@ html {
   line-height: 32px;
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .service-content .section-dovewallet .title {
-    padding-left: 20px;
-  }
-}
-
 @media (max-width: 991px) {
   .service-content .title {
     font-size: 16px;
@@ -476,8 +470,10 @@ html {
   }
 }
 
-.service-content .section-dovewallet .service-text {
-  padding-left: 30px;
+@media (min-width: 992px) {
+  .service-content .section-dovewallet .service-text {
+    padding-left: 30px;
+  }
 }
 
 .service-content .service-img {
@@ -577,11 +573,6 @@ html {
   }
 }
 
-@media (min-width: 992px) {
-  .ko .service-content .section-miningpullhub .title {
-    padding-left: 30px;
-  }
-}
 .heading {
   position: relative;
   display: block;
