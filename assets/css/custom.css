@@ -878,7 +878,7 @@ html {
   text-align: center;
   margin: 10px 0;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 16vw);
+  grid-template-rows: repeat(2, 180px);
 }
 
 .gallery-content .grid .grid-item {
