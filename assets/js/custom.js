@@ -39,6 +39,13 @@ function setBackModal() {
 function subMenuToggle() {
   var element = document.getElementById("sub-menu-bar");
   var navToggler = document.getElementById("navbar-toggler");
+  var navArea = document.querySelector('.navbar-area');  
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  
+  if(winScroll < 20){
+    navArea.classList.toggle('sticky');
+  } 
+
   element.classList.toggle("show");
 
   if (!element.classList.contains("show"))
