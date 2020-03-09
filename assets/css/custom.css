@@ -11,7 +11,7 @@ html {
   position: absolute;
   z-index: -1;
   border-radius: 50%;
-  filter: blur(54px);
+  filter: blur(37px);
   animation: 9s linear 0s infinite normal forwards running floatOne;
 }
 
