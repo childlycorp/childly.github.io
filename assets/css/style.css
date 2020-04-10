@@ -567,7 +567,7 @@ p {
     padding: 0 15px;
   }
 }
-@media (max-width: 767px) 
+@media (max-width: 767px) {
   .single-logo {
     padding: 0 15px;
   }

@@ -12,7 +12,7 @@ html {
   z-index: -1;
   border-radius: 50%;
   filter: blur(37px);
-  animation: 9s linear 0s infinite normal forwards running floatOne;
+  /* animation: 9s linear 0s infinite normal forwards running floatOne; */
 }
 
 .balloon-1 {
