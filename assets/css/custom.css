@@ -327,7 +327,7 @@ html {
 .more-text {
   visibility: hidden;
   max-height: 0px;
-  transition: 1s linear;
+  transition: 1s ease-in-out;
   overflow: hidden;
 }
 
@@ -344,7 +344,7 @@ html {
 
 .more-text.show {
   visibility: visible;
-  max-height: 500px;
+  max-height: 550px;
   padding-bottom: 30px;
 }
 
