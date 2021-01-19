@@ -14,9 +14,6 @@ function progressBar() {
 function onClickBackModal() {
   var modalElement = document.getElementById("back-modal");
   var subMenuElement = document.getElementById("sub-menu-bar");
-  var minigpoohubTextElement = document.getElementById(
-    "service-minigpoolhub-more-text"
-  );
   var dovewalletTextElement = document.getElementById(
     "service-dovewallet-more-text"
   );
@@ -25,7 +22,6 @@ function onClickBackModal() {
 
   modalElement.classList.remove("on");
   subMenuElement.classList.remove("show");
-  // minigpoohubTextElement.classList.remove("show");
   // dovewalletTextElement.classList.remove("show");
   // careersTextElement.classList.remove("show");
   navToggler.classList.remove("active");
@@ -58,11 +54,6 @@ function subMenuToggle() {
 
 function dovewalletMoreTextToggle() {
   var element = document.getElementById("service-dovewallet-more-text");
-  element.classList.toggle("show");
-}
-
-function minigpoolhubMoreTextToggle() {
-  var element = document.getElementById("service-minigpoolhub-more-text");
   element.classList.toggle("show");
 }
 
