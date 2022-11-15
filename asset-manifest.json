@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.49e77dbf.css",
-    "main.js": "/static/js/main.09ef4ac9.js",
+    "main.js": "/static/js/main.9d2f0f7e.js",
     "static/js/787.ac6226ce.chunk.js": "/static/js/787.ac6226ce.chunk.js",
     "static/media/bitcoin-dominance01.svg": "/static/media/bitcoin-dominance01.205d541830d26ba3d47d3761424b65c0.svg",
     "static/media/main_bg.svg": "/static/media/main_bg.b69bd2c7eb31bd96352363e52a4496db.svg",
@@ -30,11 +30,11 @@
     "index.html": "/index.html",
     "static/media/arrow1.svg": "/static/media/arrow1.3be8569f8698445a8f2c6cebeabb0481.svg",
     "main.49e77dbf.css.map": "/static/css/main.49e77dbf.css.map",
-    "main.09ef4ac9.js.map": "/static/js/main.09ef4ac9.js.map",
+    "main.9d2f0f7e.js.map": "/static/js/main.9d2f0f7e.js.map",
     "787.ac6226ce.chunk.js.map": "/static/js/787.ac6226ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49e77dbf.css",
-    "static/js/main.09ef4ac9.js"
+    "static/js/main.9d2f0f7e.js"
   ]
 }
