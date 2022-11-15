@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49e77dbf.css",
+    "main.js": "/static/js/main.09ef4ac9.js",
+    "static/js/787.ac6226ce.chunk.js": "/static/js/787.ac6226ce.chunk.js",
+    "static/media/bitcoin-dominance01.svg": "/static/media/bitcoin-dominance01.205d541830d26ba3d47d3761424b65c0.svg",
+    "static/media/main_bg.svg": "/static/media/main_bg.b69bd2c7eb31bd96352363e52a4496db.svg",
+    "static/media/bitcoin-dominance02.svg": "/static/media/bitcoin-dominance02.5107164378d67572d7053ad1485d1ab0.svg",
+    "static/media/color-1.jpg": "/static/media/color-1.0d12b68f354dfa7a200d.jpg",
+    "static/media/color-7.jpg": "/static/media/color-7.b2f7bad270f5671b6f31.jpg",
+    "static/media/color-11.jpg": "/static/media/color-11.49e953c12efc37966a30.jpg",
+    "static/media/color-3.jpg": "/static/media/color-3.a7dc7ad7b40764947420.jpg",
+    "static/media/color-5.jpg": "/static/media/color-5.c31a539cdcd0d1c04d48.jpg",
+    "static/media/color-9.jpg": "/static/media/color-9.60047f16d79d32c73bc7.jpg",
+    "static/media/color-12.jpg": "/static/media/color-12.9c3b5f898eb17e78d7c9.jpg",
+    "static/media/color-4.jpg": "/static/media/color-4.bc2e34bb6aa414fa478e.jpg",
+    "static/media/color-6.jpg": "/static/media/color-6.811e0c8a8ad35ee6dbc4.jpg",
+    "static/media/color-2.jpg": "/static/media/color-2.6a67f1b508ccef83252c.jpg",
+    "static/media/color-8.jpg": "/static/media/color-8.966d2d8b26146d2633c7.jpg",
+    "static/media/color-10.jpg": "/static/media/color-10.0a6f4a6c8eca8c0a1643.jpg",
+    "static/media/Montserrat.ttf": "/static/media/Montserrat.3faa3eef13649db02044.ttf",
+    "static/media/MontserratSemiBold.otf": "/static/media/MontserratSemiBold.b4f6721ba1a251742ea6.otf",
+    "static/media/GoodTimesHeavy.otf": "/static/media/GoodTimesHeavy.4bf5efda4a3fcdf94a1f.otf",
+    "static/media/GoodTimes.otf": "/static/media/GoodTimes.a86d4f7f5cdb8cf2e409.otf",
+    "static/media/subtract.svg": "/static/media/subtract.f2d53a757fb4ec0a33bc4e93d7c9726d.svg",
+    "static/media/subtract_hover.svg": "/static/media/subtract_hover.428144bec69e65e9c0c4132a7fcbd1ff.svg",
+    "static/media/more.svg": "/static/media/more.5f2f37db646791d098e6a050823c22e0.svg",
+    "static/media/triangle1.svg": "/static/media/triangle1.da82fe1f51a3847a41b43d6f2afae0d6.svg",
+    "static/media/triangle2.svg": "/static/media/triangle2.3a5e3ae8136e08796a97116d99d72494.svg",
+    "index.html": "/index.html",
+    "static/media/arrow1.svg": "/static/media/arrow1.3be8569f8698445a8f2c6cebeabb0481.svg",
+    "main.49e77dbf.css.map": "/static/css/main.49e77dbf.css.map",
+    "main.09ef4ac9.js.map": "/static/js/main.09ef4ac9.js.map",
+    "787.ac6226ce.chunk.js.map": "/static/js/787.ac6226ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49e77dbf.css",
+    "static/js/main.09ef4ac9.js"
+  ]
+}

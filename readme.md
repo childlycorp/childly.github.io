@@ -1,3 +1,3 @@
 # childly.github.io
 
-[childly.com](https://childly.com/ko.html)
+[childly.com](https://childly.com)
